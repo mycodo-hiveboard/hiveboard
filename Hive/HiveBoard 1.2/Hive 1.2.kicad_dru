@@ -1,0 +1,32 @@
+(version 1)
+(rule "class 0:0"
+  (condition "A.NetClass == 'default' && B.NetClass == 'Default'")
+  (constraint clearance (min 0.2032mm)))
+
+(rule "class 1:1"
+  (condition "A.NetClass == 'HV' && B.NetClass == 'HV'")
+  (constraint clearance (min 1.016mm)))
+
+(rule "class 2:2"
+  (condition "A.NetClass == '12v' && B.NetClass == '12v'")
+  (constraint clearance (min 0.254mm)))
+
+(rule "class 3:3"
+  (condition "A.NetClass == '5v' && B.NetClass == '5v'")
+  (constraint clearance (min 0.254mm)))
+
+(rule "class 4:4"
+  (condition "A.NetClass == '3.3v' && B.NetClass == '3.3v'")
+  (constraint clearance (min 0.254mm)))
+
+(rule "class 5:5"
+  (condition "A.NetClass == 'i2c' && B.NetClass == 'i2c'")
+  (constraint clearance (min 0.254mm)))
+
+(rule "class 6:6"
+  (condition "A.NetClass == 'GPIO' && B.NetClass == 'GPIO'")
+  (constraint clearance (min 0.254mm)))
+
+(rule "class 8:8"
+  (condition "A.NetClass == 'New Class' && B.NetClass == 'New Class'")
+  (constraint clearance (min 0.1524mm)))
